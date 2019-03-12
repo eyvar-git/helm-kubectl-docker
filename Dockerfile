@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-MAINTAINER Sergii Nuzhdin <ipaq.lw@gmail.com>
+MAINTAINER FLS DevOps <devops@fls.com>
 
 ARG K8S_VERSION
 ARG HELM_VERSION
