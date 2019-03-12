@@ -6,6 +6,7 @@ ARG K8S_VERSION
 ARG HELM_VERSION
 ENV HELM_FILENAME=helm-${HELM_VERSION}-linux-amd64.tar.gz
 
+RUN echo $K8S_VERSION $HELM_VERSION
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl  \
