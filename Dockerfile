@@ -2,11 +2,11 @@ FROM alpine:3.9
 
 MAINTAINER FLS DevOps <devops@fls.com>
 
-ARG K8S_VERSION
-ARG HELM_VERSION
+#ARG K8S_VERSION
+#ARG HELM_VERSION
+ENV K8S_VERSION=v1.13.2
+ENV HELM_VERSION=v2.12.3
 ENV HELM_FILENAME=helm-${HELM_VERSION}-linux-amd64.tar.gz
-
-RUN echo $K8S_VERSION $HELM_VERSION
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl  \
