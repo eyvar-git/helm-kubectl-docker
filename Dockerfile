@@ -4,8 +4,8 @@ MAINTAINER FLS DevOps <devops@fls.com>
 
 #ARG K8S_VERSION
 #ARG HELM_VERSION
-ENV K8S_VERSION=v1.13.3
-ENV HELM_VERSION=v2.12.3
+ENV K8S_VERSION=v1.14.1
+ENV HELM_VERSION=v2.13.1
 ENV HELM_FILENAME=helm-${HELM_VERSION}-linux-amd64.tar.gz
 
 RUN apk add --update ca-certificates \
